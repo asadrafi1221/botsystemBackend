@@ -1,7 +1,7 @@
 import express from "express";
-import connectDb from "../db/dbconnection.js";
-import signupRouter from "../routes/signinRoute.js";
-import otpauth from "../routes/auth.js";
+import connectDb from "./db/dbconnection.js";
+import signupRouter from "./routes/signinRoute.js";
+import otpauth from "./routes/auth.js";
 import cors from "cors"
 
 
