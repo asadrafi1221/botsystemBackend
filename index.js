@@ -4,16 +4,14 @@ import signupRouter from "./routes/signinRoute.js";
 import otpauth from "./routes/auth.js";
 import cors from "cors"
 import dotenv from "dotenv";
-dotenv.config();
 
 
 
 connectDb();
 
 const app = express();
-const port = process.env.PORT || 3500;
+const port = 3500;
 console.log(port)
-console.log(process.env.MONGOURL)
 
 app.use(express.json());
 app.use(cors())

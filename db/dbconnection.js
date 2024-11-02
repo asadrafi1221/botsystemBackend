@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 
 function connectDb() {
-    const url = process.env.MONGOURL;
-    console.log(url);  // This will print the URL for verification
+    const url = "mongodb+srv://asadrafi1221:n85WJENVGAQDK0QV@backendapisbotsystem.wbrck.mongodb.net/";
 
     mongoose.connect(url)
         .then(async () => {
