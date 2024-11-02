@@ -21,7 +21,7 @@ app.use('/App', signupRouter);
 app.use('/App',otpauth );
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('helo');
 }).listen(port, () => {
     console.log(`app is listening on ${port}`);
