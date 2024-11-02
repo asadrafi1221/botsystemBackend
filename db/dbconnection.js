@@ -6,7 +6,6 @@ function connectDb() {
     mongoose.connect(url)
         .then(async () => {
             console.log('Database is connected');
-        
         })
         .catch(err => console.error('Failed to connect to the database:', err));
 }
